@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="X6aDsUGbdU_pspn2Vu4Z">
+    <mxGraphModel dx="1973" dy="1696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-1" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="150" y="-290" width="1350" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-3" value="Azure Front&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Door for quick and load balancing&lt;/span&gt;&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Front_Doors.svg;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="200" as="sourcePoint" />
+            <mxPoint x="110" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-6" value="Users" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/users.svg;" vertex="1" parent="1">
+          <mxGeometry x="30" y="143" width="33" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Yw7aTnKG6tzqPmcliUr4-6" target="Yw7aTnKG6tzqPmcliUr4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Front Tier" treeRoot="1" id="Yw7aTnKG6tzqPmcliUr4-8">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="250" y="50" width="260" height="360" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-9" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Azure App Service&lt;/div&gt;&lt;div&gt;.NET Core Web App&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Auto Scaling based on demand&amp;nbsp;&lt;/div&gt;&lt;div&gt;(Increase or Decrease the VM Instances based on traffic)&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="346" y="143" width="68" height="68" as="geometry" />
+        </mxCell>
+        <UserObject label="Middle" treeRoot="1" id="Yw7aTnKG6tzqPmcliUr4-11">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="600" y="45" width="340" height="360" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-10" value="Azure Functions (Serverless)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;&lt;/strong&gt;&lt;li&gt;&lt;strong&gt;&lt;/strong&gt;&lt;ul&gt;&lt;ul&gt;&lt;b&gt;Event-driven workloads&amp;nbsp;&lt;/b&gt;&lt;/ul&gt;&lt;ul&gt;&lt;b&gt;like queuing help desk support requests&lt;/b&gt;&lt;/ul&gt;&lt;ul&gt;&lt;b&gt;Auto-scales based on incoming requests&amp;nbsp;&lt;/b&gt;&lt;/ul&gt;&lt;ul&gt;&lt;b&gt;Work best with Azure&amp;nbsp;&lt;/b&gt;&lt;/ul&gt;&lt;ul&gt;&lt;b&gt;Service Bus or Queue Storage&lt;/b&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="1">
+          <mxGeometry x="720" y="83" width="68" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="Middle" treeRoot="1" id="Yw7aTnKG6tzqPmcliUr4-14">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="1070" y="45" width="340" height="360" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="SQL Server on Azure VM with Azure Elastic SAN&lt;br&gt;&lt;br&gt;configure Always On Availability Groups manually&lt;br&gt;Availability Set or Availability Zone in same region&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" treeRoot="1" id="Yw7aTnKG6tzqPmcliUr4-12">
+          <mxCell style="html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};verticalAlign=top;shape=image;verticalLabelPosition=bottom;aspect=fixed;points=[];image=img/lib/azure2/databases/Azure_SQL_VM.svg;textDirection=ltr;spacing=5;spacingRight=0;" vertex="1" parent="1">
+            <mxGeometry x="1211.67" y="83" width="48.33" height="51.17" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-15" value="Why Not Azure SQL Database or Managed Instance&amp;nbsp;:&amp;nbsp;&lt;div&gt;SQL Server Always On Availability (SSAS) is not&amp;nbsp;&lt;div&gt;supported on Azure SQL Database or Managed Instance&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="320" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-16" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Worker_Container_App.svg;" vertex="1" parent="1">
+          <mxGeometry x="737" y="350" width="42.24" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-17" value="&lt;div&gt;If business logic is containerized or tightly integrated&amp;nbsp;&lt;/div&gt;&lt;div&gt;with services, Azure Container Apps&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="621" y="302" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-18" value="Azure Firewall" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Firewall.svg;" vertex="1" parent="1">
+          <mxGeometry x="980" y="146" width="47" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-20" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Yw7aTnKG6tzqPmcliUr4-14" target="Yw7aTnKG6tzqPmcliUr4-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1177" y="280" as="sourcePoint" />
+            <mxPoint x="897" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yw7aTnKG6tzqPmcliUr4-22" value="&lt;div&gt;For Front End:&lt;/div&gt;&lt;div&gt;***************&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Azure App Service (.NET Core Web App)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Auto Scaling based on demand&amp;nbsp;&lt;/div&gt;&lt;div&gt;- scale out during demand, scale in during off-hours&lt;/div&gt;&lt;div&gt;- Includes built-in monitoring, custom domains, TLS/SSL, and CI/CD support&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-120" width="430" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
